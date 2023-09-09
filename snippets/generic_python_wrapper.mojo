@@ -42,4 +42,4 @@ struct python_wrapper:
 #    w.execute()
 #    if w.function_success:
 #        var x:Float64 = w.function_result.to_float64()
-#        print(w.function_result)
+#        print(x)
