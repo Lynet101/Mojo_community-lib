@@ -9,4 +9,5 @@ To make a "standard" library including much of the core functionality expected b
 - Finnish array (when traits become a thing)
 - make list
 - make tuple
+- make dictionary
 
