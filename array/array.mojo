@@ -76,11 +76,11 @@ struct Array[T: AnyType]:
             left += 1
             right -= 1
 
-"""    def extend(inout self, second_list: Array[T]):
-        for i in range(second_list.len() - 1):
-            self.append(second_list[i])
+    def extend(inout self, second_list: Array[T]):
+        for i in second_list:
+            self.append(i)
 
-    fn copy(inout self) -> Array[T]:
+    """fn copy(inout self) -> Array[T]:
         var new = Array[T]
         new.capacity = self.capacity
         for i in range(self.size):
@@ -120,8 +120,13 @@ struct ArrayIterator[T: AnyType]:
         return ret
     
 def main():
-    pass
-    
+    arr = Array[Int](2, 3)
+    arr2 = Array[Int](3, 4)
+    for i in arr:
+        print(i)
+    arr.extend(arr2)
+    for i in arr:
+        print(i)
 
 
 
