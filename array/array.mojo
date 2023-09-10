@@ -40,7 +40,7 @@ struct Array[T: AnyType]:
         self.capacity = 0
         self.data = Pointer[T].alloc(self.capacity)
 
-    fn remove(inout self, index: Int):
+    """fn remove(inout self, index: Int):
         self.pop(index)
 
     fn pop(inout self, index: Int) -> T:
@@ -51,7 +51,7 @@ struct Array[T: AnyType]:
 
         if 0 < self.size < self.capacity // 2:
             self.resize(self.capacity // 2)
-        return item
+        return item"""
 
     fn insert(inout self, index: Int, value: T):
         if index < 0 or index > self.size:
