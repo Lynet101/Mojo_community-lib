@@ -88,7 +88,7 @@ struct ListIterator[T: AnyType]:
         let ret = self.storage.load(self.offset)
         self.offset += 1
         return ret
-
+""" example on creation
 def main():
-    var arr = Array[Int]([1, 2, 3])
+    var arr = Array[Int]([1, 2, 3])"""
     
