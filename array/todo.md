@@ -4,18 +4,20 @@ set | ✓
 itter | ✓
 len | ✓
 
-append
-clear
-count
-extend
-insert
+append | ✓
+clear | ✓
+extend | ✓
 
-index
-remove
-pop
-reverse
-copy
-sort
+remove | ✓
+pop | ✓
+reverse | ✓
+swap | ✓
 
-swap
+
 enumerate
+copy
+
+count
+insert
+index
+sort
