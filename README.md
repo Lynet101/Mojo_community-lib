@@ -10,4 +10,5 @@ To make a "standard" library including much of the core functionality expected b
 - make list (rd4com in progress)
 - make tuple #I'll start work once traits are implemented
 - make dictionary #I'll start work once traits are implemented
+- Quicksort
 
