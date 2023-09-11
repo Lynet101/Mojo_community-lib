@@ -71,6 +71,8 @@ struct Array[T: AnyType]:
         self.storage.store(index1, self.storage.load(index2))
         self.storage.store(index2, temp)
 
+    
+
 struct ListIterator[T: AnyType]:
     var offset: Int
     var max: Int
