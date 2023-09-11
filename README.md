@@ -10,5 +10,8 @@ To make a "standard" library including much of the core functionality expected b
 - make list (rd4com in progress)
 - make tuple #I'll start work once traits are implemented
 - make dictionary #I'll start work once traits are implemented
-- Quicksort
+- Quicksort (#lynet101 working)
+- python -> mojo type conversion
+- object arithmetic implementations, like ``__pow__`` and ``__truediv__``
+- better python library import
 
