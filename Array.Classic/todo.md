@@ -13,11 +13,13 @@ pop | ✓
 reverse | ✓
 swap | ✓
 
-
-enumerate
-copy
-
-count
+copy #difficult b****
 insert
+
+#Will be implemented when traits are a thing
+count
 index
 sort
+
+#will (maybe) be implemented when variable unzipping is implemented
+enumerate
