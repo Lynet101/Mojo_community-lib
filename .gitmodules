@@ -7,3 +7,6 @@
 	path = mojo-console-style-print
 	url = https://github.com/rd4com/mojo-console-style-print.git
     	branch = main
+[submodule "mojo-magiclist"]
+	path = mojo-magiclist
+	url = https://github.com/rd4com/mojo-magiclist
