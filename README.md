@@ -8,7 +8,7 @@ To make a "standard" library including much of the core functionality expected b
 
 # In progress
 - Finnish array (when traits become a thing) | Lynet101
-- make list | rd4com
+- magiclist | rd4com
 - Quicksort | Lynet101
 
 # Ideas
