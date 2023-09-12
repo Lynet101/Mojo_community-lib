@@ -1,4 +1,4 @@
-struct DArray[T: AnyType]:
+struct Array[T: AnyType]:
     var storage: Pointer[T]
     var size: Int
     var capacity: Int
@@ -10,7 +10,12 @@ struct DArray[T: AnyType]:
         let src = Pointer.address_of(data).bitcast[T]()
         for i in range(len(data)):
             self.storage.store(i, src.load(i))
-    
+
+    fn __init__(inout self, capacity: Int):
+        self.size = 0
+        self.capacity = capacity
+        self.storage = Pointer[T].alloc(self.capacity)
+        
     fn __getitem__(inout self, index: Int) -> T:
         return self.storage.load(index)
 
@@ -19,6 +24,11 @@ struct DArray[T: AnyType]:
 
     fn __iter__(self) -> ListIterator[T]:
         return ListIterator[T](self.storage, self.size)
+    
+    fn __moveinit__(inout self, owned previous: Self):
+        self.size = previous.size
+        self.capacity = previous.capacity
+        self.storage = previous.storage
     
     fn len(inout self) -> Int:
         return self.size
@@ -37,7 +47,7 @@ struct DArray[T: AnyType]:
         self.storage.store(self.size, value)
         self.size += 1
     
-    fn extend(inout self, array: DArray[T]):
+    fn extend(inout self, array: Array[T]):
         for item in array: self.append(item)
     
     fn clear(inout self):
@@ -79,6 +89,10 @@ struct DArray[T: AnyType]:
         self.storage.store(index, value)
         self.size += 1
 
+    fn copy(self) -> Self:
+        var new = Self(self.size)
+        for item in self: new.append(item)
+        return new^
 
 struct ListIterator[T: AnyType]:
     var offset: Int

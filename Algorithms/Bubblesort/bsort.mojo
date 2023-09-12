@@ -1,5 +1,5 @@
 #to use with arrays created from DArray.classic
-from DArray import DArray
+from DArray import Array
 
 def sort(list: Array[Int]):
     for i in range(list.len()):

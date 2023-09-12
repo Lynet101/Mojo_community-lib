@@ -11,7 +11,7 @@ Name ends with Classic:
 
 # DArrayClassic
 Dynamic type Array*, index, count and enumerate not implemented due to mojo limitations
-copy not implemented due to me not being big brain enough
+copy Implemented, but broken AF
 
 * = Defined according to python. DArray can store one Dtype [Int, Float, double, etc.], but can expand
 
