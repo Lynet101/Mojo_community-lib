@@ -19,7 +19,9 @@ Help grow "standard" library/utilities that might be usefull to users.
   - [x] conversions both ways native-types/builtin.object
   - [x] builtin.object type checking
   - [x] typed value based deletion in multi type array
-  - [x] index based read write with type switching 
+  - [x] index based read write with type switching
+### [console-style](https://github.com/rd4com/mojo-console-style-print)
+  - [x] ansi color/style
 ### IO/c-utilies.mojo
 naïve c interop to improve but it works
 - [X] read file
