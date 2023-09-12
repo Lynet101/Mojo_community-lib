@@ -20,7 +20,7 @@ struct Array[T: AnyType]:
     fn __iter__(self) -> ListIterator[T]:
         return ListIterator[T](self.storage, self.size)
     
-    fn len(self) -> Int:
+    fn __len__(inout self) -> Int:
         return self.size
 
     fn resize(inout self, by: Int):
