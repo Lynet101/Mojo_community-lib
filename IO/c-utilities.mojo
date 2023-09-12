@@ -97,5 +97,7 @@ fn example_usage_():
     except e:
         print(e.value)
 
-
+# HEAP SUMMARY:
+# ==224092==     in use at exit: 0 bytes in 0 blocks
+# ==224092==   total heap usage: 105 allocs, 105 frees, 89,343 bytes allocated
 
