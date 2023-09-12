@@ -18,7 +18,7 @@ To make a "standard" library including much of the core functionality expected b
 > untyped list
   - [x] conversions both ways native-types/builtin.object
   - [x] builtin.object type checking
-  - [x] typed value based deletion in many type array
+  - [x] typed value based deletion in multi type array
   - [x] index based read write with type switching 
 ### IO/c-utilies.mojo
 naïve c interop to improve but it works
