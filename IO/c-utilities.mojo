@@ -26,7 +26,7 @@ struct CUTIL:
         CMD.from_string(cmd)#o2
         PERM.from_string("r")#o3
 
-        var char:Int=-1
+        var char:Int=4294967295
         var str_ret:String=""
         var BFR:String="0"
         var BFR_ptr = BFR._as_ptr()
@@ -37,13 +37,17 @@ struct CUTIL:
             PERM.free()#c2
             CMD.free()
             raise("popen fail")
-
-        while 1==1:
-            var char:Int = external_call["fgetc", Int32,CMEM_T](FP).__int__()
-            if char == -1:
-                break
-            BFR_ptr.store(0,char)
-            str_ret+=BFR
+        try:
+            while 1==1:
+                var char:Int = external_call["fgetc", Int32,CMEM_T](FP).__int__()
+                if char == -1:
+                    break
+                BFR_ptr.store(0,char)
+                str_ret+=BFR
+        except:
+            external_call["pclose", CMEM_T](FP)#c1
+            PERM.free()#c2
+            CMD.free()#c3
         external_call["pclose", CMEM_T](FP)#c1
         PERM.free()#c2
         CMD.free()#c3
@@ -69,14 +73,18 @@ struct CUTIL:
             PERM.free()#c2
             CMD.free()
             raise("fopen fail")
-
-        while 1==1:
-            char = external_call["fgetc", Int32,CMEM_T](FP).__int__()
-            #if char == (4294967295):
-            if external_call["feof", Int,CMEM_T](FP) != 0:
-                break
-            BFR_ptr.store(0,char)
-            str_ret+=BFR[0]
+        try:
+            while 1==1:
+                char = external_call["fgetc", Int32,CMEM_T](FP).__int__()
+                #if char == (4294967295):
+                if external_call["feof", Int,CMEM_T](FP) != 0:
+                    break
+                BFR_ptr.store(0,char)
+                str_ret+=BFR[0]
+        except:
+            external_call["pclose", CMEM_T](FP)
+            PERM.free()#c2
+            CMD.free()#c3
         external_call["pclose", CMEM_T](FP)#c1
         PERM.free()#c2
         CMD.free()#c3
