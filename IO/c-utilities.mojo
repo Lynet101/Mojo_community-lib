@@ -26,7 +26,7 @@ struct CUTIL:
         CMD.from_string(cmd)#o2
         PERM.from_string("r")#o3
 
-        var char:Int=4294967295
+        var char:Int=-1
         var str_ret:String=""
         var BFR:String="0"
         var BFR_ptr = BFR._as_ptr()
