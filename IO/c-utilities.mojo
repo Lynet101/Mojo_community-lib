@@ -18,8 +18,6 @@ struct CMEM:
     #update_size_until_find_\0
 
 struct CUTIL:
-    #get result of command into string, usefull can do cat file ...
-    #can do ls..
     @staticmethod
     fn exec(cmd:String) raises ->String:
         var PERM = CMEM()
