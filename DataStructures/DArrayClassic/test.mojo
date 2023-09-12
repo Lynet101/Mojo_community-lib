@@ -1,13 +1,11 @@
-from array import Array
+from DArray import Array
 
 fn test_append():
-    var list: Array[Int] = [1, 2, 3, 4]
-    
-    list.append(5)
-    list.extend([2, 2, 2])
+    let list: Array[Int] = [1, 2, 3, 4]
+    let list2: Array[Int] = list.copy()    
     
     for item in list: print(item)
-    # outputs 1 2 3 4 5 2 2 2
+    for item in list2: print(item)
 
 fn main():
     test_append()
