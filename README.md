@@ -14,6 +14,11 @@ To make a "standard" library including much of the core functionality expected b
   - [x] file read/write with buffered reader/writer
   - [x] libc: dirent, string, stdio!
   - [ ] more to come
+### [magiclist](https://github.com/rd4com/mojo-magiclist)
+> untyped list
+  - [x] conversions both ways native-types/object
+  - [x] object type checking
+  - [x] typed value based deletion 
 ### IO/c-utilies.mojo
 naïve c interop to improve but it works
 - [X] read file
