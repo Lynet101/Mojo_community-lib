@@ -1,7 +1,6 @@
 # Mojo_community-lib
 > Community based effort to create libraries/utilities in [Mojo🔥](https://docs.modular.com/mojo/)
 ## In progress
-- Finnish array (when traits become a thing) | Lynet101
 - magiclist | rd4com
 - Quicksort | Lynet101
 # hyperlinks and informations

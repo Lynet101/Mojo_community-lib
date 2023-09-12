@@ -1,3 +1,7 @@
-Very simple bubble sort implementation (could work nicely with the list implementation)
+Bubble sort implementation in mojo
 
-Mainly ment as a temp solution, untill something faster (as quicksort) gets implemented
+# bubble_demo.mojo
+Demo implementation using only mojo std lib. 
+
+# bsort.mojo
+Plug and play implementation designed for use with DArray.classic (see DataStructures)
