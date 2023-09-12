@@ -16,8 +16,8 @@ To make a "standard" library including much of the core functionality expected b
   - [ ] more to come
 ### [magiclist](https://github.com/rd4com/mojo-magiclist)
 > untyped list
-  - [x] conversions both ways native-types/object
-  - [x] object type checking
+  - [x] conversions both ways native-types/builtin.object
+  - [x] builtin.object type checking
   - [x] typed value based deletion
   - [x] index based read write with type switching 
 ### IO/c-utilies.mojo
