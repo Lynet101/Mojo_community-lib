@@ -3,6 +3,7 @@
 ## In progress
 - magiclist | rd4com
 - Quicksort | Lynet101
+- shims | ish
 # hyperlinks and informations
 ### [Algorithms/bubble sort](https://github.com/Lynet101/Mojo_community-lib/tree/main/Algorithms/Bubblesort)
 ### [DynArrayClassic](https://github.com/Lynet101/Mojo_community-lib/blob/main/DataStructures/DArrayClassic/array.mojo)
@@ -21,7 +22,7 @@
   - [x] index based read write with type switching
 ### [console-style](https://github.com/rd4com/mojo-console-style-print)
   - [x] ansi color/style
-### IO/c-utilies.mojo
+### [IO/c-utilities](https://github.com/Lynet101/Mojo_community-lib/blob/main/IO/c-utilities.mojo)
 naïve c interop to improve but it works
 - [X] read file into string
 ``` var res:String = CUTIL.read_file("test.txt") ```
