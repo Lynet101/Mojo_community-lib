@@ -7,7 +7,7 @@ To make a "standard" library including much of the core functionality expected b
 - magiclist | rd4com
 - Quicksort | Lynet101
 # doc & usages
-### ish/shims
+### [ish/shims](https://github.com/lsh/shims)
   - [X] bitcasting read/write with endian choice
   - [x] Directory path list files
   - [x] siphash/wyhash
