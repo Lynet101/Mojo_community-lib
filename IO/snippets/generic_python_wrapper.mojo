@@ -20,7 +20,7 @@ struct python_wrapper:
     
     # Executes a Python function
     # @param func: The name of the function
-    # @return: The result
+    # @return: The result as function type
     fn execute(inout self, func: StringLiteral) -> PythonObject:
         if self.package_ready == False:
             return None
@@ -31,7 +31,7 @@ struct python_wrapper:
 
 #example
 fn main() raises:
-    var w = python_wrapper("random")
-    let b = w.execute("randrange")
-    if b:
-        print(b(100))
+    var w = python_wrapper("random")    # import python package
+    let b = w.execute("randrange")      # retrieve 'random.randrange' function as function type
+    if b:                               # check nullable
+        print(b(100))                   # execute function with arguments
