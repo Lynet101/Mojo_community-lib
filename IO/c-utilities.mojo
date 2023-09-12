@@ -1,4 +1,3 @@
-
 alias CMEM_T = Pointer[SIMD[DType.int8, 1]] #Pointer[UInt8]
 struct CMEM:
     var ptr:CMEM_T
@@ -18,6 +17,8 @@ struct CMEM:
     #update_size_until_find_\0
 
 struct CUTIL:
+    #get result of command into string, usefull can do cat file ...
+    #can do ls..
     @staticmethod
     fn exec(cmd:String) raises ->String:
         var PERM = CMEM()
@@ -38,14 +39,15 @@ struct CUTIL:
             raise("popen fail")
 
         while 1==1:
-            char = external_call["fgetc", Int,CMEM_T](FP)
-            if char == (4294967295):
+            var char:Int = external_call["fgetc", Int32,CMEM_T](FP).__int__()
+            if char == -1:
                 break
             BFR_ptr.store(0,char)
             str_ret+=BFR
         external_call["pclose", CMEM_T](FP)#c1
         PERM.free()#c2
         CMD.free()#c3
+
         #buffer.free()#c4
         return str_ret
 
@@ -56,7 +58,7 @@ struct CUTIL:
         CMD.from_string(cmd)#o2
         PERM.from_string("r")#o3
 
-        var char:Int=4294967295
+        var char:Int=-1
         var str_ret:String=""
         var BFR:String="0"
         var BFR_ptr = BFR._as_ptr()
@@ -69,7 +71,7 @@ struct CUTIL:
             raise("fopen fail")
 
         while 1==1:
-            char = external_call["fgetc", Int,CMEM_T](FP)
+            char = external_call["fgetc", Int32,CMEM_T](FP).__int__()
             #if char == (4294967295):
             if external_call["feof", Int,CMEM_T](FP) != 0:
                 break
