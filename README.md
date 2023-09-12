@@ -28,7 +28,7 @@ naïve c interop to improve but it works
 ``` var res:String = CUTIL.read_file("test.txt") ```
 - [X] Execute command into string
 ``` var res:String = CUTIL.exec("ls -lah") ```
-### [IO/snippet/template python wrapper](https://github.com/Lynet101/Mojo_community-lib/blob/main/IO/snippets/generic_python_wrapper.mojo)
+### [template python wrapper](https://github.com/Lynet101/Mojo_community-lib/blob/main/IO/snippets/generic_python_wrapper.mojo)
 ## Ideas
 - make tuple
 - make dictionary
