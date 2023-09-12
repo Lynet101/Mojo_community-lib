@@ -10,3 +10,6 @@
 [submodule "mojo-magiclist"]
 	path = mojo-magiclist
 	url = https://github.com/rd4com/mojo-magiclist
+[submodule "shims"]
+	path = shims
+	url = https://github.com/lsh/shims
