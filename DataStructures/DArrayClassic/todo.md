@@ -13,8 +13,8 @@ pop | ✓
 reverse | ✓
 swap | ✓
 
-copy #difficult b****
-insert
+copy 
+insert | ✓
 
 #Will be implemented when traits are a thing
 count
