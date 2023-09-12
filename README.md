@@ -1,12 +1,12 @@
 # Mojo_community-lib
-A community driven mojo lib
+> A community driven mojo lib
 ## Goal
-To make a "standard" library including much of the core functionality expected by a high-level-language, but currently missing from Mojo's standard lib (since mojo is quiet new)
+Help grow "standard" library/utilities that might be usefull to users.
 ## In progress
 - Finnish array (when traits become a thing) | Lynet101
 - magiclist | rd4com
 - Quicksort | Lynet101
-# doc & usages
+# external links and informations
 ### [ish/shims](https://github.com/lsh/shims)
   - [X] bitcasting read/write with endian choice
   - [x] Directory path list files
