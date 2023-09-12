@@ -6,7 +6,7 @@ Help grow "standard" library/utilities that might be usefull to users.
 - Finnish array (when traits become a thing) | Lynet101
 - magiclist | rd4com
 - Quicksort | Lynet101
-# external links and informations
+# hyperlinks and informations
 ### [ish/shims](https://github.com/lsh/shims)
   - [X] bitcasting read/write with endian choice
   - [x] Directory path list files
