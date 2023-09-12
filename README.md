@@ -1,7 +1,5 @@
 # Mojo_community-lib
 > Community based effort to create libraries/utilities in [Mojo🔥](https://docs.modular.com/mojo/)
-## Goal
-Help grow "standard" library/utilities that might be usefull to users.
 ## In progress
 - Finnish array (when traits become a thing) | Lynet101
 - magiclist | rd4com
