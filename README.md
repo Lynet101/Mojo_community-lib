@@ -7,6 +7,7 @@ Help grow "standard" library/utilities that might be usefull to users.
 - magiclist | rd4com
 - Quicksort | Lynet101
 # hyperlinks and informations
+### [Algorithms/bubble sort](https://github.com/Lynet101/Mojo_community-lib/tree/main/Algorithms/Bubblesort)
 ### [ish/shims](https://github.com/lsh/shims)
   - [X] bitcasting read/write with endian choice
   - [x] Directory path list files
