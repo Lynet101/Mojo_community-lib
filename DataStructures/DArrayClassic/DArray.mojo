@@ -1,4 +1,4 @@
-struct Array[T: AnyType]:
+struct DArray[T: AnyType]:
     var storage: Pointer[T]
     var size: Int
     var capacity: Int
@@ -37,7 +37,7 @@ struct Array[T: AnyType]:
         self.storage.store(self.size, value)
         self.size += 1
     
-    fn extend(inout self, array: Array[T]):
+    fn extend(inout self, array: DArray[T]):
         for item in array: self.append(item)
     
     fn clear(inout self):

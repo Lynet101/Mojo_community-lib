@@ -5,3 +5,4 @@ Demo implementation using only mojo std lib.
 
 # bsort.mojo
 Plug and play implementation designed for use with DArray.classic (see DataStructures)
+(Currently not working, due to lack of `copy` in DArray struct)
