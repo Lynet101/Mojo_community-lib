@@ -1,5 +1,5 @@
 # Mojo_community-lib
-> A community driven mojo lib
+> Community based effort to create libraries/utilities in [Mojo🔥](https://docs.modular.com/mojo/)
 ## Goal
 Help grow "standard" library/utilities that might be usefull to users.
 ## In progress
