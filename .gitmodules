@@ -1,15 +1,3 @@
-[submodule "mojo-object-conversion"]
-	path = mojo-object-conversion
-	url = https://github.com/rd4com/mojo-object-conversion.git
-    	branch = main
-
-[submodule "mojo-console-style-print"]
-	path = mojo-console-style-print
-	url = https://github.com/rd4com/mojo-console-style-print.git
-    	branch = main
-[submodule "mojo-magiclist"]
-	path = mojo-magiclist
-	url = https://github.com/rd4com/mojo-magiclist
 [submodule "shims"]
 	path = shims
 	url = https://github.com/lsh/shims
