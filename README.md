@@ -3,6 +3,7 @@
 ## In progress
 - magiclist | rd4com
 - Quicksort | Lynet101
+- shims | ish/shims
 # hyperlinks and informations
 ### [Algorithms/bubble sort](https://github.com/Lynet101/Mojo_community-lib/tree/main/Algorithms/Bubblesort)
 ### [DynArrayClassic](https://github.com/Lynet101/Mojo_community-lib/blob/main/DataStructures/DArrayClassic/array.mojo)
