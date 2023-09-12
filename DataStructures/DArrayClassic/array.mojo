@@ -20,7 +20,7 @@ struct Array[T: AnyType]:
     fn __iter__(self) -> ListIterator[T]:
         return ListIterator[T](self.storage, self.size)
     
-    fn __len__(inout self) -> Int:
+    fn len(inout self) -> Int:
         return self.size
 
     fn resize(inout self, by: Int):
@@ -71,7 +71,14 @@ struct Array[T: AnyType]:
         self.storage.store(index1, self.storage.load(index2))
         self.storage.store(index2, temp)
 
-    
+    fn insert(inout self, index: Int, value: T):
+        if self.size == self.capacity:
+            self.resize(self.capacity * 2)
+        for i in range(self.size, index, -1):
+            self.storage.store(i, self.storage.load(i-1))
+        self.storage.store(index, value)
+        self.size += 1
+
 
 struct ListIterator[T: AnyType]:
     var offset: Int
