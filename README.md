@@ -6,6 +6,7 @@
 - shims | ish
 - native sockets | TeamPuzel
 # hyperlinks and informations
+### [FFI shared lib load/use](https://github.com/rd4com/mojo-learning/tree/main/FFI%20shared%20libraries%20load%20and%20use)
 ### [Algorithms/bubble sort](https://github.com/Lynet101/Mojo_community-lib/tree/main/Algorithms/Bubblesort)
 ### [DynArrayClassic](https://github.com/Lynet101/Mojo_community-lib/blob/main/DataStructures/DArrayClassic/array.mojo)
 ### [ish/shims](https://github.com/lsh/shims)
