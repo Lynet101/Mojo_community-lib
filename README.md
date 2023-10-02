@@ -1,3 +1,5 @@
+**As of 02/10/2023 this repo will become archived. Please contact lynet101.dev@gmail.com if you wish for the repository to become unarchived again**
+
 # Mojo_community-lib
 > Community based effort to create libraries/utilities in [Mojo🔥](https://docs.modular.com/mojo/)
 ## In progress
